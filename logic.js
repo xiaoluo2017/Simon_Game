@@ -84,7 +84,7 @@ $(document).ready(function() {
   });
   for (var i = 0; i < 4; i++) {
     audio.push(document.createElement('audio'));
-    audio[i].setAttribute('src', i +".mp3");
+    audio[i].setAttribute('src', "audios/" + i + ".mp3");
     audio[i].addEventListener('ended', function() {
       this.play();
     }, false);
@@ -94,7 +94,7 @@ $(document).ready(function() {
 function userError() {
   userSection = false;
   var alarm = document.createElement('audio');
-  alarm.setAttribute('src', "alarm.mp3");
+  alarm.setAttribute('src', "audios/alarm.mp3");
   alarm.addEventListener('ended', function() {
     this.play();
   }, false);
