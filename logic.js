@@ -96,13 +96,13 @@ function userError() {
   var alarm = document.createElement('audio');
   alarm.setAttribute('src', "alarm.mp3");
   alarm.addEventListener('ended', function() {
-  	this.play();
+    this.play();
   }, false);
   playSound(alarm, 0, 1500);
 
   if (isStrict) {
-  	hintBlink("! !");
-  	window.setTimeout(function(){
+    hintBlink("! !");
+    window.setTimeout(function(){
       gameReset();
     }, 1500);
   } else {
@@ -149,24 +149,24 @@ function repetition() {
   if (cnt >= 13) {
     timeInterval = 200;
   } else if (cnt >= 9) {
-  	timeInterval = 400;
+    timeInterval = 400;
   } else if (cnt >= 5) {
-  	timeInterval = 600;
+    timeInterval = 600;
   }
   for (var i = 0; i < series.length; i++) {
-  	(function(i) {
-  	  console.log(i);
-	  window.setTimeout(function(){
-		padDisplay(series[i]);
-	  }, i * timeInterval * 2 + timeInterval);
-	  window.setTimeout(function(){
-		padRestore(series[i]);
-	  }, i * timeInterval * 2 + timeInterval * 2);
+    (function(i) {
+      console.log(i);
+      window.setTimeout(function(){
+        padDisplay(series[i]);
+      }, i * timeInterval * 2 + timeInterval);
+      window.setTimeout(function(){
+	padRestore(series[i]);
+      }, i * timeInterval * 2 + timeInterval * 2);
       playSound(audio[series[i]], i * timeInterval * 2 + timeInterval, i * timeInterval * 2 + timeInterval * 2)
-	})(i); 
+    })(i); 
   }
   window.setTimeout(function(){
-  	userSection = true;
+    userSection = true;
   }, series.length * timeInterval * 2);
 }
 
@@ -174,7 +174,7 @@ function generateSerie() {
   userSection = false;
   cnt++;
   if (cnt === 20) {
-	winTheGame();
+    winTheGame();
   }
   var index = Math.floor(Math.random() * 4);
   series.push(index);
