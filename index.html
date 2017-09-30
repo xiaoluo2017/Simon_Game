@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simon</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Oswald" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <div id="simon-board">
+          <div class="col-md-12 mx-auto">
+            <div class="row">
+              <div class="col-md-6">
+                <div id="green" class="pad"></div>
+              </div>
+              <div class="col-md-6">
+                <div id="red" class="pad"></div>
+              </div>
+            </div>  
+            <div class="row">
+              <div class="col-md-6">
+                <div id="yellow" class="pad"></div>
+              </div>
+              <div class="col-md-6">
+                <div id="blue" class="pad"></div>
+              </div>
+            </div>
+          </div>
+          <div id="core" class="">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <h1 id="brand">Simon</h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-1"></div>
+                <div class="col-md-3"><div id="display" class="text-center"><span id="count">--</span></div></div>
+                <div class="col-md-3 text-center">
+                  <button id="start" class="btn btn-danger"></button>
+                </div>
+                <div class="col-md-3 text-center">
+                  <button id="strict" class="btn btn-warning"></button>
+                </div>
+              </div>
+            <div class="row">
+              <div class="col-md-1"></div>
+              <div class="col-md-3 text-center">
+                <p class="label">COUNT</p>
+              </div>
+              <div class="col-md-3 text-center">
+                <p class="label">START</p>
+              </div>
+              <div class="col-md-3 text-center">
+                <p class="label">STRICT</p>
+              </div>
+            </div>
+            <div class="row">
+              <div id="result" class="col-md-4 mx-auto">
+                <i class="fa fa-gamepad fa-3x" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://use.fontawesome.com/9c20ef1628.js"></script>
+  <script src="logic.js"></script>
+  </body>
+</html>
