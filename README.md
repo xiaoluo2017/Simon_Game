@@ -11,5 +11,5 @@ A popular electronic game
 * open index.html
 
 # Screenshot
-<img src="https://github.com/xiaoluo2017/Simon_Game/blob/images/index.PNG">
+<img height="540" src="https://github.com/xiaoluo2017/Simon_Game/blob/master/images/index.PNG">
 
